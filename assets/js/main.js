@@ -113,5 +113,19 @@
 				});
 
 			});
-
+			function toggleText() {
+				var shortText = document.getElementById("shortText");
+				var fullText = document.getElementById("fullText");
+				var toggleButton = document.getElementById("toggleButton");
+			
+				if (fullText.style.display === "none") {
+					fullText.style.display = "inline";
+					shortText.style.display = "none";
+					toggleButton.innerHTML = "Less";
+				} else {
+					fullText.style.display = "none";
+					shortText.style.display = "inline";
+					toggleButton.innerHTML = "More";
+				}
+			}
 })(jQuery);
