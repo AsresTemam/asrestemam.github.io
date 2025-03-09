@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Certification Courses | Dr. Asres Temam</title>
+    <meta name="description" content="Free IT certification courses curated by Dr. Asres Temam - AI Researcher and Computer Science Educator">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/courses.css">
+
+    <link rel="stylesheet" href="css/dark-mode.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">AT</div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#research">Research</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="index.html#publications">Publications</a></li>
+                <li><a href="courses.html" class="active">Free Courses</a></li>
+                <li><a href="index.html#contact" class="contact-btn">Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Courses Hero Section -->
+    <section class="courses-hero">
+        <div class="courses-hero-content" data-aos="fade-up">
+            <h1>Free Certification Courses</h1>
+            <p>Explore curated free certification courses in various IT domains to enhance your skills</p>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Browse by Category</h2>
+                <div class="section-subtitle">Click on a category to explore courses</div>
+            </div>
+            
+            <div class="categories-grid">
+                <!-- 1. AI Category -->
+                <div class="category-card" data-aos="fade-up">
+                    <div class="category-header" onclick="toggleCategory(this)">
+                        <div class="category-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Artificial Intelligence</h3>
+                        <div class="toggle-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <p>Machine Learning, Deep Learning, NLP, Computer Vision, and more</p>
+                        <div class="course-list">
+                            <div class="course-item">
+                                <h4>Google AI Fundamentals</h4>
+                                <a href="https://example.com/ai-fundamentals" target="_blank" class="course-btn">Click me <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="course-item">
+                                <h4>Microsoft Azure AI Fundamentals</h4>
+                                <a href="https://example.com/azure-ai" target="_blank" class="course-btn">Click me <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="course-item">
+                                <h4>Deep Learning Specialization</h4>
+                                <a href="https://example.com/deep-learning" target="_blank" class="course-btn">Click me <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 2. Software Programming Category -->
+                <div class="category-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-header" onclick="toggleCategory(this)">
+                        <div class="category-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Software Programming</h3>
+                        <div class="toggle-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <p>Python, Java, C++, Data Structures, Algorithms, and more</p>
+                        <div class="course-list">
+                            <div class="course-item">
+                                <h4>Python for Everybody</h4>
+                                <a href="https://example.com/python" target="_blank" class="course-btn">Click me <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="course-item">
+                                <h4>Java Programming Masterclass</h4>
+                                <a href="https://example.com/java" target="_blank" class="course-btn">Click me <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="course-item">
+                                <h4>Data Structures & Algorithms</h4>
+                                <a href="https://example.com/dsa" target="_blank" class="course-btn">Click me <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 3. Hardware Programming Category -->
+                <div class="category-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-header" onclick="toggleCategory(this)">
+                        <div class="category-icon">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h3>Hardware Programming</h3>
+                        <div class="toggle-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <p>Arduino, Raspberry Pi, Embedded Systems, and more</p>
+                        <div class="course-list">
+                            <div class="course-item">
+                                <h4>Arduino Programming Basics</h4>
+                                <a href="https://example.com/arduino" target="_blank" class="course-btn">Click me <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="course-item">
+                                <h4>Raspberry Pi Projects</h4>
+                                <a href="https://example.com/raspberry" target="_blank" class="course-btn">Click me <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="course-item">
+                                <h4>Embedded Systems Programming</h4>
+                                <a href="https://example.com/embedded" target="_blank" class="course-btn">Click me <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 4. Web Development Category -->
+                <div class="category-card" data-aos="fade-up">
+                    <div class="category-header" onclick="toggleCategory(this)">
+                        <div class="category-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Web Development</h3>
+                        <div class="toggle-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <p>HTML, CSS, JavaScript, React, Node.js, and more</p>
+                        <div class="course-list">
+                            <div class="course-item">
+                                <h4>Web Development Bootcamp</h4>
+                                <a href="https://example.com/webdev" target="_blank" class="course-btn">Click me <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="course-item">
+                                <h4>Full Stack JavaScript</h4>
+                                <a href="https://example.com/fullstack" target="_blank" class="course-btn">Click me <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="course-item">
+                                <h4>React Certification Course</h4>
+                                <a href="https://example.com/react" target="_blank" class="course-btn">Click me <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 5. IoT Category -->
+                <div class="category-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-header" onclick="toggleCategory(this)">
+                        <div class="category-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h3>Internet of Things (IoT)</h3>
+                        <div class="toggle-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <p>IoT Fundamentals, Sensors, IoT Networks, and more</p>
+                        <div class="course-list">
+                            <div class="course-item">
+                                <h4>IoT Fundamentals</h4>
+                                <a href="https://example.com/iot-basics" target="_blank" class="course-btn">Click me <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="course-item">
+                                <h4>Smart Home Automation</h4>
+                                <a href="https://example.com/smart-home" target="_blank" class="course-btn">Click me <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="course-item">
+                                <h4>IoT with Azure</h4>
+                                <a href="https://example.com/azure-iot" target="_blank" class="course-btn">Click me <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 6. Cybersecurity Category -->
+                <div class="category-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-header" onclick="toggleCategory(this)">
+                        <div class="category-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Cybersecurity</h3>
+                        <div class="toggle-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <p>Network Security, Ethical Hacking, Cryptography, and more</p>
+                        <div class="course-list">
+                            <div class="course-item">
+                                <h4>Introduction to Cybersecurity</h4>
+                                <a href="https://example.com/cybersec" target="_blank" class="course-btn">Click me <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="course-item">
+                                <h4>Ethical Hacking</h4>
+                                <a href="https://example.com/ethical-hacking" target="_blank" class="course-btn">Click me <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="course-item">
+                                <h4>Network Security Fundamentals</h4>
+                                <a href="https://example.com/network-security" target="_blank" class="course-btn">Click me <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 7. Data Science Category -->
+                <div class="category-card" data-aos="fade-up">
+                    <div class="category-header" onclick="toggleCategory(this)">
+                        <div class="category-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3>Data Science & Analytics</h3>
+                        <div class="toggle-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <p>Data Analysis, Data Visualization, Big Data, Statistics, and more</p>
+                        <div class="course-list">
+                            <div class="course-item">
+                                <h4>Data Science with Python</h4>
+                                <a href="https://example.com/data-science" target="_blank" class="course-btn">Click me <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="course-item">
+                                <h4>Statistical Analysis</h4>
+                                <a href="https://example.com/stats" target="_blank" class="course-btn">Click me <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="course-item">
+                                <h4>Big Data with Hadoop</h4>
+                                <a href="https://example.com/big-data" target="_blank" class="course-btn">Click me <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 8. Cloud Computing Category -->
+                <div class="category-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-header" onclick="toggleCategory(this)">
+                        <div class="category-icon">
+                            <i class="fas fa-mobile"></i>
+                        </div>
+                        <h3>Mobile App</h3>
+                        <div class="toggle-icon">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="category-content">
+                        <p>AWS, Azure, Google Cloud, Cloud Architecture, and more</p>
+                        <div class="course-list">
+                            <div class="course-item">
+                                <h4>Android App's Development Masterclass - Build 2 Apps - Java</h4>
+                                <a href="https://www.udemy.com/course/android-apps-development-masterclass-build-2-apps-java/?couponCode=05019008342512A734AB" target="_blank" class="course-btn">Click me <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="course-item">
+                                <h4>Microsoft Azure Fundamentals</h4>
+                                <a href="https://example.com/azure" target="_blank" class="course-btn">Click me <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="course-item">
+                                <h4>Google Cloud Platform Basics</h4>
+                                <a href="https://example.com/gcp" target="_blank" class="course-btn">Click me <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content" data-aos="fade-up">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to get notified when new free courses are added</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Asres Temam. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/asres-temam-3a914462/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:asrestemam4@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/asres" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Function to toggle category expansion
+        function toggleCategory(element) {
+            // Get the parent card
+            const categoryCard = element.closest('.category-card');
+            
+            // Toggle active class on this specific card
+            categoryCard.classList.toggle('active');
+            
+            // Update the toggle icon
+            const toggleIcon = element.querySelector('.toggle-icon i');
+            if (categoryCard.classList.contains('active')) {
+                toggleIcon.classList.remove('fa-chevron-down');
+                toggleIcon.classList.add('fa-chevron-up');
+            } else {
+                toggleIcon.classList.remove('fa-chevron-up');
+                toggleIcon.classList.add('fa-chevron-down');
+            }
+        }
+        
+        
+        // Initialize: open the first category by default
+        document.addEventListener('DOMContentLoaded', function() {
+            const firstCategory = document.querySelector('.category-card');
+            if (firstCategory) {
+                const firstCategoryHeader = firstCategory.querySelector('.category-header');
+                if (firstCategoryHeader) {
+                    toggleCategory(firstCategoryHeader);
+                }
+            }
+        });
+    </script>
+    <script src="js/dark-mode.js"></script>
+</body>
+</html>
