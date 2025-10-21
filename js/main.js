@@ -3,7 +3,42 @@ document.addEventListener('DOMContentLoaded', () => {
     AOS.init({
         duration: 800,
         offset: 100,
-        once: true
+        once: true,
+        easing: 'ease-in-out'
+    });
+
+    // Navbar scroll effect
+    const navbar = document.querySelector('.navbar');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+
+        if (currentScroll > 100) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+
+        lastScroll = currentScroll;
+    });
+
+    // Scroll to top button
+    const scrollToTopBtn = document.getElementById('scrollToTop');
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            scrollToTopBtn.classList.add('visible');
+        } else {
+            scrollToTopBtn.classList.remove('visible');
+        }
+    });
+
+    scrollToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     });
 
     // Navigation toggle
